@@ -7,6 +7,7 @@ module.exports = ({ env }) => ({
             database: env('DATABASE_NAME', 'muproduction'),
             user: env('DATABASE_USERNAME', 'admin'),
             password: env('DATABASE_PASSWORD', 'muproductiondatabase'),
+            ssl: env.bool('DATABASE_SSL', false),
         },
         debug: false,
     },
